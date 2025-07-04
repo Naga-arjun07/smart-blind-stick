@@ -1,0 +1,39 @@
+### 🧰 **Components Needed**
+- Arduino Uno
+- HC-SR04 Ultrasonic Sensor
+- LED (any color)
+- 220Ω resistor (for LED)
+- Buzzer (active or passive)
+- 9V battery with DC barrel jack or battery clip
+- Jumper wires
+- Breadboard (optional)
+
+---
+
+### 🔌 **Wiring Instructions**
+
+| Component            | Arduino Pin         | Notes                                                                 |
+|----------------------|---------------------|-----------------------------------------------------------------------|
+| **HC-SR04 VCC**       | 5V                  | Powers the ultrasonic sensor                                          |
+| **HC-SR04 GND**       | GND                 | Connect to Arduino GND                                                |
+| **HC-SR04 Trig**      | Digital Pin 9       | Sends the ultrasonic pulse                                            |
+| **HC-SR04 Echo**      | Digital Pin 10      | Receives the reflected pulse                                          |
+| **LED Anode (+)**     | Digital Pin 6       | Use a 220Ω resistor in series                                         |
+| **LED Cathode (–)**   | GND                 | Connect to Arduino GND                                                |
+| **Buzzer +**          | Digital Pin 7       | Active buzzers work best for simple tone                             |
+| **Buzzer –**          | GND                 | Connect to Arduino GND                                                |
+| **9V Battery +**      | VIN or DC Jack      | Supplies power to the Arduino Uno                                     |
+| **9V Battery –**      | GND                 | Common ground with Arduino                                            |
+
+---
+
+### 🧠 **How It Works**
+- The **ultrasonic sensor** detects obstacles by sending out sound waves and measuring the time it takes for them to bounce back.
+- If an object is detected within a certain range (e.g., < 50 cm), the **LED lights up** and the **buzzer sounds** to alert the user.
+
+---
+
+### ✅ **Optional Enhancements**
+- Add a **vibration motor** for tactile feedback.
+- Use a **rechargeable battery** with a charging module.
+- Integrate a **Bluetooth module** for remote monitoring.
